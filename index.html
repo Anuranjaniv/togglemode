@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="toggle.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <button id="mode-toggle">Toggle Mode</button>
+    </header>
+
+    <div class="container">
+        <h1>Cozy And Simple Ways</h1><h1> to listen Audio Books</h1>
+            <h2>Explore,search any types od Audio books from this website.</h2>
+            <p>Welcome to the captivating world of audiobooks, where the magic of storytelling meets the symphony of sound. At [Your Website Name], we invite you to experience literature in a whole new way. Immerse yourself in the rich narratives, entrancing voices, and emotive performances that breathe life into every word. Whether you're a commuter seeking companionship, a multitasker craving entertainment, or simply a connoisseur of stories, our audiobooks will transport you to far-off realms, introduce you to intriguing characters, and kindle your imagination. Discover the joy of literature through your ears and let the stories surround you as you embark on a sonic odyssey like no other.</p>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+<script>
+const modeToggle = document.getElementById("mode-toggle");
+const body = document.body;
+
+modeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    // You can save the user's mode preference to local storage here.
+});
+
+// Check the user's preference from local storage and apply the class if needed.
+// const userPreference = localStorage.getItem("darkMode");
+// if (userPreference === "true") {
+//     body.classList.add("dark-mode");
+// }
+</script>
